@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo do Gatinho</title>
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>🐱 Pegue os Gatinhos!</h1>
+
+    <!-- Informações do jogo -->
+    <section class="info-bar">
+      <span>Pontos: <strong id="score">0</strong></span>
+      <span>Vidas: <strong id="lives">5</strong></span>
+      <span>Recorde: <strong id="highScore">0</strong></span>
+    </section>
+
+    <!-- Área do jogo -->
+    <canvas id="gameCanvas" width="500" height="600" aria-label="Área do jogo"></canvas>
+
+    <!-- Botões -->
+    <nav class="buttons">
+      <button id="startBtn">▶ INICIAR</button>
+      <button id="pauseBtn">⏸ PAUSAR</button>
+      <button id="resetBtn">🔄 RESETAR</button>
+    </nav>
+
+    <!-- Controles -->
+    <p class="controls">
+      🎮 Use as setas ou o mouse para mover a cesta. <br>
+      ⌨ Pressione <strong>ESC</strong> para pausar/despausar.
+    </p>
+  </main>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
