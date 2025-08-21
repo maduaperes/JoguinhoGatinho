@@ -1,0 +1,84 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg, #ffe6f0, #e6f7ff, #f5ffe6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#menuContainer {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px 25px;
+  border-radius: 25px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  border: 3px solid #ffd9ec;
+  width: 350px;
+  max-width: 90%;
+}
+
+#menuContainer h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  color: #ff99cc;
+  text-shadow: 2px 2px #fff5fa;
+  margin-bottom: 25px;
+}
+
+#menuButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#menuButtons button {
+  background: linear-gradient(135deg, #ffb6d9, #ffd6a5);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 18px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(255, 182, 217, 0.5);
+  transition: transform 0.2s, background 0.3s, box-shadow 0.3s;
+}
+
+#menuButtons button:hover {
+  background: linear-gradient(135deg, #a5f8d3, #c9e4ff);
+  transform: scale(1.08);
+  box-shadow: 0 6px 14px rgba(165, 248, 211, 0.6);
+}
+
+#menuButtons button:active {
+  transform: scale(0.95);
+}
+
+#menuButtons button:focus {
+  outline: none;
+}
+
+/* Responsividade */
+@media screen and (max-width: 500px) {
+  #menuContainer {
+    width: 90%;
+    padding: 25px 20px;
+  }
+
+  #menuContainer h1 {
+    font-size: 28px;
+  }
+
+  #menuButtons button {
+    font-size: 15px;
+    padding: 10px 18px;
+  }
+}

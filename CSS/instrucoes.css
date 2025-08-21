@@ -1,0 +1,143 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fundo geral */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg, #ffe6f0, #e6f7ff, #f5ffe6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 15px;
+}
+
+/* Container central */
+#menuContainer {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 25px;
+  border-radius: 25px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  width: 450px;
+  max-width: 95%;
+  text-align: center;
+  border: 3px solid #ffd9ec;
+  position: relative;
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Título */
+#menuContainer h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  color: #ff99cc;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px #fff5fa;
+  animation: popIn 0.5s ease-out;
+}
+
+/* Texto de instruções */
+#instructionsText {
+  text-align: left;
+  font-weight: 600;
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+#instructionsText p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  transition: transform 0.3s, color 0.3s;
+  cursor: default;
+  position: relative;
+}
+
+#instructionsText p:hover {
+  transform: translateX(6px);
+  color: #ff99cc;
+}
+
+#instructionsText p.cat { color: #ff66b3; }
+#instructionsText p.points { color: #3399ff; }
+#instructionsText p.bomb { color: #ff6666; }
+#instructionsText p.controls { color: #666666; }
+
+/* Emojis animados */
+#instructionsText p::before {
+  content: attr(data-emoji);
+  margin-right: 8px;
+  display: inline-block;
+  animation: bounce 1s infinite;
+}
+
+/* Botões */
+#menuButtons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+#menuButtons button {
+  background: linear-gradient(135deg, #ffb6d9, #ffd6a5);
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 15px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s, background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(255, 182, 217, 0.5);
+}
+
+#menuButtons button:hover {
+  background: linear-gradient(135deg, #a5f8d3, #c9e4ff);
+  transform: scale(1.08);
+  box-shadow: 0 6px 14px rgba(165, 248, 211, 0.6);
+}
+
+#menuButtons button:active {
+  transform: scale(0.95);
+}
+
+#menuButtons button:focus {
+  outline: none;
+}
+
+/* Animações */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Responsividade */
+@media screen and (max-width: 600px) {
+  #menuContainer {
+    width: 100%;
+    padding: 20px;
+  }
+
+  #instructionsText {
+    font-size: 14px;
+  }
+
+  #menuButtons button {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+}
