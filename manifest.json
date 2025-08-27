@@ -1,0 +1,24 @@
+{
+    "name":"Catch The Cats",
+    "short_name":"Catch Cats",
+    "description":"Aplicativo feito durante a aula de TDS",
+    "start_url":"https://maduaperes.github.io/JoguinhoGatinho/",
+    "background_color":"#ffe6f0",
+    "theme_color":"#e6f7ff",
+    "scope":"https://maduaperes.github.io/JoguinhoGatinho/",
+    "display":"standalone",
+    "icons":[
+        {
+            "src":"paw.png",
+            "sizes":"50x50",
+            "type":"image/png"
+        }
+    ],
+    "lang":"pt-br",
+    "dir":"auto",
+    "categories":[
+        "game"
+    ],
+    "id":"com.maduaperes.catchthecats",
+    "orientation":"any"
+}
