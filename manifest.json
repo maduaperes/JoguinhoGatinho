@@ -9,7 +9,7 @@
     "display": "standalone",
     "icons": [
         {
-            "src": "images/paw.png",
+            "src": "img/paw.png",
             "sizes": "512x512",
             "type": "image/png"
         }
