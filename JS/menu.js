@@ -3,13 +3,13 @@ const instructionsBtn = document.getElementById("instructionsBtn");
 const exitBtn = document.getElementById("exitBtn");
 
 startBtn.addEventListener("click", () => {
-  window.location.href = "game.html"; // seu arquivo do jogo
+  window.location.href = "index.html";
 });
 
 instructionsBtn.addEventListener("click", () => {
-  window.location.href = "instrucoes.html"; // arquivo de instruções
+  window.location.href = "instrucoes.html";
 });
 
 exitBtn.addEventListener("click", () => {
-  window.close(); // tenta fechar a aba
+  window.close();
 });
