@@ -1,24 +1,29 @@
 {
-    "name": "Catch The Cats",
-    "short_name": "Catch Cats",
-    "description": "Aplicativo feito durante a aula de TDS",
-    "start_url": "https://maduaperes.github.io/JoguinhoGatinho/",
-    "background_color": "#ffe6f0",
-    "theme_color": "#e6f7ff",
-    "scope": "https://maduaperes.github.io/JoguinhoGatinho/",
-    "display": "standalone",
-    "icons": [
-        {
-            "src": "img/paw.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
-    ],
-    "lang": "pt-br",
-    "dir": "auto",
-    "categories": [
-        "game"
-    ],
-    "id": "com.maduaperes.catchthecats",
-    "orientation": "any"
+  "name": "Catch The Cats",
+  "short_name": "CatchCats",
+  "description": "Aplicativo feito durante a aula de TDS",
+  "start_url": "https://maduaperes.github.io/JoguinhoGatinho/",
+  "scope": "https://maduaperes.github.io/JoguinhoGatinho/",
+  "background_color": "#ffe6f0",
+  "theme_color": "#e6f7ff",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "img/paw.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/paw.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "lang": "pt-BR",
+  "dir": "auto",
+  "categories": [
+    "game"
+  ],
+  "id": "catch-the-cats",
+  "orientation": "any"
 }
