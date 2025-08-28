@@ -4,8 +4,8 @@
   "description": "Aplicativo feito durante a aula de TDS",
   "start_url": "https://maduaperes.github.io/JoguinhoGatinho/",
   "scope": "https://maduaperes.github.io/JoguinhoGatinho/",
-  "background_color": "#ffe6f0",
-  "theme_color": "#e6f7ff",
+  "background_color": "#e6f7ff",
+  "theme_color": "#ffe6f0",
   "display": "standalone",
   "icons": [
     {
