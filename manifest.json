@@ -10,7 +10,7 @@
     "icons": [
         {
             "src": "images/paw.png",
-            "sizes": "50x50",
+            "sizes": "512x512",
             "type": "image/png"
         }
     ],
