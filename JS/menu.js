@@ -3,7 +3,7 @@ const instructionsBtn = document.getElementById("instructionsBtn");
 const exitBtn = document.getElementById("exitBtn");
 
 startBtn.addEventListener("click", () => {
-  window.location.href = "index.html";
+  window.location.href = "jogo.html";
 });
 
 instructionsBtn.addEventListener("click", () => {

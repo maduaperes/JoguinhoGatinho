@@ -5,33 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Catch the Cats! 🐱</title>
-  <link rel="stylesheet" href="CSS/style.css">
-  <link rel="icon"  href="img/paw.png">
-  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" type="image/png" href="img/paw.png">
+  <link rel="stylesheet" href="CSS/menu.css">
 </head>
 
 <body>
+  <div id="menuContainer">
+    <h1>🐱 Catch the Cats!</h1>
+    <div id="menuButtons">
+      <button id="startGameBtn">Começar Jogo</button>
+      <button id="instructionsBtn">Instruções</button>
+      <button id="exitBtn">Sair</button>
+    </div>
+  </div>
 
-  <div id="backBtn">← Menu</div>
-
-  <main id="gameContainer">
-
-    <header id="hud">
-      <div>Pontos: <span id="score">0</span></div>
-      <div>Vidas: <span id="lives">5</span></div>
-      <div>Recorde: <span id="highScore">0</span></div>
-    </header>
-
-    <canvas id="gameCanvas" width="400" height="600"></canvas>
-
-    <section id="controls">
-      <button id="startBtn">INICIAR</button>
-      <button id="pauseBtn">PAUSAR</button>
-      <button id="resetBtn">RESETAR</button>
-    </section>
-  </main>
-
-  <script src="JS/script.js"></script>
+  <script src="JS/menu.js"></script>
 </body>
 
 </html>
